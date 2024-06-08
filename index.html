@@ -19,10 +19,33 @@
     <link rel="stylesheet" href="cake.css">
     <!-- <link rel="stylesheet/less" href="cake.less"> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <script>
+        window.onload = function() {
+        // Define the correct password
+        var correctPassword = "churail"; // Replace this with your actual password
+
+        // Function to prompt for the password
+        function promptForPassword() {
+            var password = prompt("What does Saqlain normally call you as a nickname?");
+            if (password.toLowerCase() === correctPassword.toLocaleLowerCase()) {
+            } else {
+                // If the password is incorrect, show an alert and prompt again
+                alert("Access denied! Please try again.");
+                promptForPassword();
+            }
+        }
+
+        // Prompt for the password when the page loads
+        promptForPassword();
+    };
+    </script>
 </head>
 
 <body>
-    <div class="loading"></div>
+  
+    <div class="loading">
+        <button id="openModalBtn">Enter Password</button>
+    </div>
     <audio class="song" controls loop>
         <source src="hbd.mp3"></source>
         Your browser isn't invited for super fun audio time.
@@ -112,7 +135,7 @@
         </div>
         <div class="row message">
             <div class="col-md-12 text-center">
-                <p>Today is...</p>
+                <p>My Churail!.. Today is...</p>
                 <p>as beautiful as any other day,</p>
                 <p>but today you realize</p>
                 <p>another year has flown by</p>
@@ -148,12 +171,14 @@
                 <p>I'd like to wish you,</p>
                 <p>one more time,</p>
                 <p>a very happy birthday.</p>
+                <p>and ..</p>
+                <p><strong> I am so sorry if I have ever hurt you.</strong></p>
             </div>
         </div>
         
     </div>
     <div class="row">
-        <p class="messagewish">Happy Birthday Strinjamo! <br> ❤️💕😊</p>
+        <p class="messagewish">Happy Birthday Strinjamo ... ! <br> ❤️💕😊</p>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
