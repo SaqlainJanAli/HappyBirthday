@@ -1053,7 +1053,7 @@ audio {
     -ms-transform: translate(0px, 0px);
   }
 }
-o @keyframes bannar_come {
+@keyframes bannar_come {
   0% {
     transform: translate(0px, -1000px);
   }
@@ -1315,3 +1315,14 @@ o @keyframes bannar_come {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+.messagewish {
+  top: 300px;
+  text-align: center;
+  color: darkgreen;
+  font-family: cursive;
+  font-size: 20px;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 1px 3px ghostwhite;
+  position: relative; /* or absolute, or fixed */
+  z-index: 1000; /* Adjust as needed; higher values bring the element more to the front */
+}
